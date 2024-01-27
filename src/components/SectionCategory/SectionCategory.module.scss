@@ -1,0 +1,170 @@
+$background-white: whitesmoke;
+
+.sectionCategory {
+  padding: 3rem 8.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 73vh;
+  width: 100%;
+  background-color: $background-white;
+
+}
+
+.containerCategory {
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  width: 100%;
+  height: auto;
+  gap: 1.3rem; 
+
+}
+
+.cardCategory {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  min-width: 73px;
+  text-align: center;
+  box-shadow: 3px 3px 10px 1px;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+
+
+  
+.cardCategory img {
+  width: 100%;
+  height: 80%;
+  object-fit:cover;
+}
+
+.cardCategory div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0;
+}
+.cardCategory p {
+padding: 0!important;
+margin: 0;
+}
+
+.containerRender {
+  text-align: center;
+  padding: 4rem 0;
+  min-height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: a;
+  gap: 1.5rem;
+  grid-template-rows:max-content;
+}
+
+.titleCategory {
+  display: block;
+  text-align: center;
+  margin: 4rem 0 0 0;
+}
+
+.cardsProduct { 
+  height: 500px;
+  box-sizing: border-box; 
+  position: relative;
+  text-align: start;
+}
+
+.lookButton {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.73);
+
+  &:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+  }
+}
+
+
+  //ANIMATION OPTIONAL CARDS 
+
+  .scaleInVerBottom {
+    animation: scaleInVerBottom 0.2s 0s none;
+  }
+  
+  @keyframes scaleInVerBottom {
+    0% {
+      transform: scaleY(0);
+      transform-origin: 0 100%;
+    }
+    100% {
+      transform: scaleY(1);
+      transform-origin: 0 100%;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .sectionCategory {
+      padding: 3rem 5rem;
+    }
+
+    .containerCategory {
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2,1fr);
+      gap: 1.3rem; 
+    }
+    .containerRender {
+      gap: 0.5rem;
+    }
+    .cardsProduct { 
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sectionCategory {
+      padding: 3rem 4rem;
+    }
+
+    .cardsProduct { 
+      height: 350px;
+      transform: scale(0.9);
+      // transform: scaleX(0.95);
+
+    }
+  }
+
+  @media (max-width: 550px) {
+    .sectionCategory {
+      padding: 3rem 2rem;
+    }
+
+    .cardCategory {
+      font-size: 14px;
+      max-height: 160px;
+      min-width: 60px;
+
+    }
+    .containerRender {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .cardsProduct { 
+      height: 400px;
+      transform: scaleY(1);
+
+
+    }
+
+
+  }

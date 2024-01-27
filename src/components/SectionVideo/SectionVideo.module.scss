@@ -1,0 +1,46 @@
+.sectionVideo{
+    position: relative;
+    width: 100%;
+    max-height: 74vh;
+    overflow: hidden;
+  }
+  
+  .publicidadVideoDesktop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+  }
+
+  .publicidadVideoMobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .sectionVideo {
+      max-height: 80vh!important;
+    }
+
+    .publicidadVideoDesktop {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: none;
+    }
+
+    .publicidadVideoMobile {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: flex;
+    }
+
+
+  }

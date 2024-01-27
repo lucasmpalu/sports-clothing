@@ -1,0 +1,187 @@
+.overlayCart {
+  z-index: 1000;
+  height: 100vh !important;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo con opacidad */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-size: 16px;
+}
+
+.containerCart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 100vh;
+  width: 28%;
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: white;
+  gap: 2rem;
+  animation: translateCart 0.35s linear;
+}
+
+@keyframes translateCart {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+hr {
+  width: 100%;
+  color: 0.5px solid rgba(0, 0, 0, 0.2980392157);
+}
+
+.containerProducts {
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+}
+
+.cardProduct {
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerImg {
+  height: 100%;
+  width: 13vh;
+}
+
+.imgProduct {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.containerInfoDown {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerQuantity {
+  border: 0.5px solid rgba(0, 0, 0, 0.2980392157);
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 14px;
+}
+
+.btnMore, .btnLess {
+  border: none;
+  background-color: rgba(250, 235, 215, 0);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.containerTotalCart {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerStartBuy {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnBuy {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+.btnBuy:hover {
+  background-color: rgba(0, 0, 0, 0.73);
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.closeCart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.btnLookMore {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: rgba(250, 235, 215, 0);
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.btnLookMore:hover {
+  border: 0.5px solid rgba(0, 0, 0, 0.2980392157);
+}
+
+.isEmpty {
+  padding: 0.5rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.2980392157);
+  text-align: center;
+  font-size: 14px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.containerEntrega {
+  gap: 1rem;
+}
+
+.containerEntrega label {
+  margin-bottom: 3px;
+}
+
+.containerEntrega label {
+  display: block;
+}
+
+.containerEntrega input,
+.containerEntrega p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.665);
+}/*# sourceMappingURL=Cart.module.css.map */

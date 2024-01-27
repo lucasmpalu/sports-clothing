@@ -1,0 +1,59 @@
+
+
+.modalDeslizante {
+    background-color: rgb(230, 0, 0);
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .modalDeslizante div {
+    display: flex;
+    font-size: 15px;
+    gap: 3rem;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    // TENER EN CUENTA LA PROPIEDAD DE ABAJO, NO LA RECORDABA Y EL TEXTO SE SEPARABA EN LINEAS
+    //EL TEXTO NO SE A  SEPARAR EN LINEAS, SOLO SERÁ EN UNA LINEA
+    white-space: nowrap; 
+    color: white;
+    animation: move 20s linear infinite;
+    width: 100vw;
+    overflow: hidden;
+
+  }
+  
+  @keyframes move {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+    
+  }
+  
+
+@media (max-width: 992px) {
+  .modalDeslizante {
+    height: 9vh;
+    gap: 2.5rem;
+  }
+  .modalDeslizante div {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modalDeslizante {
+    height: 8vh;
+    gap: 2.3rem;
+  }
+  .modalDeslizante div {
+    font-size: 13px;
+  }
+}

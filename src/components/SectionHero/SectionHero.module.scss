@@ -1,0 +1,110 @@
+
+// HERO CARROUSEL
+.sectionHero {
+  height: 73vh;
+  overflow: hidden;
+}
+  
+  .imgHero {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 0.4s;
+    animation: imgHero 0.5s ;
+    transition: 0.9s;
+    background-attachment: fixed;
+  }
+
+  @keyframes imgHero {
+    from {
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+
+  
+  .containerCarrousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  .prevButton,
+  .nextButton {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: background 0.5s ease;
+  }
+  
+  .prevButton {
+    left: 0;
+    &:hover {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.875), rgba(0, 0, 0, 0));
+      cursor: pointer;
+    }
+  }
+  
+  .nextButton {
+    right: 0;
+    &:hover {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.811));
+      cursor: pointer;
+
+
+
+
+    }
+
+
+  }
+  
+  .middleButton {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 30%; 
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 30;
+  
+    &:hover {
+        + .imgHero {
+          transform: scale(1.2);
+          transition: 0.4s; 
+
+        }
+      }
+  }
+
+
+  
+
+
+  @media (max-width: 768px) {
+
+.sectionHero {
+  height: 78vh;
+}
+
+
+
+  }
+
+
+  @media (max-width: 550px) {
+    .sectionHero {
+      max-height: 78vh;
+    }
+  }

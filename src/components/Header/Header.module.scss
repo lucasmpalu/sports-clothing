@@ -1,0 +1,284 @@
+$color-red: #E60000;
+$line-input: 0.5px solid #cccccc88 ;
+
+header {
+    position: sticky!important;
+    top: 0;
+    width: 100%;
+    height: 27vh;
+    z-index: 1000; // Ajusta el valor según sea necesario para asegurarte de que esté por encima de otros elementos
+    background-color: black;
+    
+    }
+
+.boxHeaderTop, .optionalHeader, .productsNav {
+    display: flex;
+    align-items: center;
+    padding: 0 8.5rem;
+}
+  
+  .scrolledLogo {
+    transform: scale(0.75);
+    transition: transform 0.3s ease; 
+  }
+
+.optionalHeader {
+    height: 5.4vh;
+    background-color: $color-red;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: white!important;
+}
+
+.optionalHeader .NavLink {
+    font-size: 13px;
+}
+
+.boxHeaderTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    height: 10.8vh;
+    position: relative;
+}
+
+.iconMenu {
+height: 20px;
+padding: 0;
+display: none;
+}
+
+.productsNav {
+    gap: 1.8rem;
+    height: 10.8vh;
+    align-items: center!important;
+
+}    
+    
+
+.iconOptional {
+    height: 22px;
+}
+
+
+
+
+
+.containerIconCart {
+    position: relative;
+}
+
+
+.NavCart {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+
+.logoCompany {
+    padding: 0 1.5rem 0 0;
+}
+
+.iconLogin{
+ height: 22px;
+}
+
+.productsQuantity {
+    font-size: 10px;
+    color: white;
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 60px;
+    top: 0px;
+    right: -7px;
+}
+
+
+
+
+.iconCart {
+    height: 22px;
+    transform: scale(1.1);
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.NavLink {
+    text-decoration: none; 
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    &:hover {
+        opacity: 0.6;
+        transition: 0.4s;
+      }
+  }
+
+  .optionalHeader a{
+    color: black;
+    font-weight: 500;
+    font-size: 14px ;
+   }
+
+.inputSearch {
+    width: 400px;
+    height: 0.7rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 8px;
+    outline: none;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+}
+
+.containerInput {
+    border: $line-input; 
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.inputSearchResponsive {
+    width: 100%;
+    height: 0.7rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 8px;
+    outline: none;
+    display: none;
+
+}
+
+.containerInputSearchResponsive {
+    width: 100%;
+
+    border: $line-input; 
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    padding: 0.5rem;
+}
+
+
+
+.iconSearch {
+    height: 22px;
+}
+
+@media (max-width: 992px) {
+
+    .inputSearch {
+        width: 250px;
+    }
+
+    .boxHeaderTop, .optionalHeader, .productsNav {
+        display: flex;
+        align-items: center;
+        padding: 0 5rem;
+        margin: auto;
+    }
+    .productsNav {
+        justify-content:space-between;
+        gap: 1rem;
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    .containerInputSearchResponsive {
+        display: flex;
+    }
+
+    header {
+        height: 20vh;
+    }
+
+
+    .boxHeaderTop, .optionalHeader, .productsNav {
+        display: flex;
+        align-items: center;
+        padding: 0 4rem;
+        margin: auto;
+    }
+
+    .productsNav {
+        height: 6vh;
+    }
+
+    .logoBoxResponsive {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .iconMenu {
+        display: block;
+    }
+
+   .NavLink {
+    display: none;
+   }
+
+    .optionalHeader {
+        display: none;
+    }
+
+    .inputSearch {
+        display: none;
+    }
+
+    .containerInput {
+        display: none
+    }
+
+
+
+    .iconLogin {
+        display: none
+    }
+
+    .logoCompany {
+        height: 40px;
+    }
+
+    .inputSearchResponsive {
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    .boxHeaderTop, .productsNav {
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        margin: auto;
+    }
+
+    .logoCompany {
+        height: 30px;
+        // transform: scale(0.75)!important;
+    }
+
+}

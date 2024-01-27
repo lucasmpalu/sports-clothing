@@ -1,0 +1,365 @@
+$color-red:#E60000;
+$line-input: 0.5px solid #cccccc88 ;
+$color-transparante: #ffffff00;
+$color-black: #000000;
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 79vh;
+    background-color:$color-black;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    padding-top: 2rem ;
+
+}
+
+.footerTop{
+ height: 70%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.footerMid {
+  padding: 0rem 8.5rem;
+  display: flex;
+  flex: 1;
+  height: 25%;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.712);
+
+}
+
+.footerDown {
+  height: 5vh;
+  background-color: rgb(26, 26, 26);
+}
+
+.footerTop, .footerDown {
+  padding: 0 8.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footerNewsletter {
+  padding: 0rem 8.5rem;
+  min-height: 16vh;
+  align-items: center;
+  display: flex;
+  background-color: $color-red;
+}
+
+.footerNewsletter div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: white;
+  
+}
+
+.newsletterLeft {
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.newsletterLeft p {
+  font-size: 12px;
+}
+
+.newsletterLeft h2 {
+  font-size: 1.7rem;
+  margin-right: 1rem;
+}
+
+
+.newsletterRight {
+  font-size: 10px;
+}
+
+
+
+
+.newsletterInput {
+  width: 100%;
+  height: 40px;
+  padding: 2rem;
+  border: none;
+  background-color: $color-transparante;
+  color: wheat!important;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 8px; 
+  border: $line-input; 
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.newsletterForm {
+  justify-content:center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  padding: 0.3rem 0;
+}
+
+.newsletterButtonSend {
+ background-color:$color-transparante;
+  border: none;
+  font-size: 1rem; 
+  padding: 0;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+
+
+
+}
+
+.containerInput{
+width: 100%!important;
+gap: 1rem;
+
+}
+
+.payCard, .sendCard {
+ height: 18px;
+ border-radius: 2px;
+}
+
+
+.NavLink {
+    text-decoration: none;
+    color: white; 
+    font-weight: 200!important;
+    font-size: 14px;
+    &:hover {
+      opacity: 0.6;
+      transition: 0.4s;
+    }
+  }
+
+  .navsFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.1rem;
+    width: 50%;
+    height: 100%;
+    
+  }
+
+  .containerNavLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.1rem;
+    width: 50%;
+    height: 100%;
+  }
+
+
+  .footerMidLeft, .footerMidRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .containerPagosyEnvios {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footerMid div {
+    width: 50%;
+  }
+
+  .navsFooter h4 {
+    margin: 0;
+  }
+
+  .menuFooter {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+
+    .footerNewsletter {
+      padding: 0 5rem;
+    }
+
+    .newsletterLeft {
+      gap: 0rem;
+    }
+
+    .footerTop, .footerDown {
+      padding: 0 5rem;
+    }
+
+    .footerMid, {
+      padding: 1rem 5rem;
+
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .containerNavLink {
+      overflow: hidden;
+      animation: entradaNavLinks 0.5s ease-in-out;
+    }
+
+    @keyframes entradaNavLinks {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+
+      }
+    }
+
+
+    .footerNewsletter {
+      padding: 2rem 4rem!important;
+
+    }
+
+      .newsletterLeft {
+        gap: 1rem!important;
+        flex-direction:column;
+        margin-bottom: 1rem;
+        width: 100%!important;
+      }
+
+      .newsletterRight {
+        width: 100%!important;  
+      }
+      
+      .footerNewsletter {
+        flex-direction:column;
+        height: 31vh ;
+      }
+  
+      .containerInput {
+        flex-direction:column;
+        width: 100%;
+
+      }
+
+      .newsletterInput {
+        width: 100%;
+      }
+
+    .footerNewsletter, .footerDown {
+      padding: 0 4rem;
+     }
+
+     .containerMenuFooter {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+     }
+
+     .menuFooter {
+      display: flex;
+      height: 24px;
+     }
+
+
+     footer {
+      padding: 0;
+      height: auto;
+     }
+
+     .footerTop {
+      flex-direction: column;
+      padding: 2rem 4rem;
+      gap: 2rem;
+     }
+
+
+
+     .navsFooter {
+      width: 100%;
+     }
+
+     .containerNavLink {
+      overflow: hidden;
+      height: auto;
+      width: 100%;
+    }
+
+    .footerMid {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+        padding: 1rem 4rem;
+        gap: 1rem;
+        border-top: none;
+      
+    }
+
+    .footerMidLeft {
+      width: 100%!important;
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
+
+    .footerMidRight {
+      flex-direction: column;
+      width: 100%!important;
+      align-items: flex-start;
+
+    }
+
+    .newsletterForm {
+      align-items: center!important;
+    }
+    
+    .newsletterRight {
+      justify-content: center;
+
+    }
+  }
+
+
+  @media (max-width: 550px) {
+    
+    .footerNewsletter {
+      text-align: center;
+      padding: 2rem 2rem;
+      // min-height: 30vh!important;
+
+    }
+
+    .footerDown {
+      height: 2rem;
+    }
+  }
