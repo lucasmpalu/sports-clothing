@@ -5,7 +5,7 @@
     height: 10vh;
     align-items: center;
     display: flex;
-    width: 100vw;
+    max-width: 100vw;
     overflow: hidden;
   }
   
@@ -13,7 +13,7 @@
     display: flex;
     font-size: 15px;
     gap: 3rem;
-    position: absolute;
+    position: relative;
     align-items: center;
     display: flex;
     // TENER EN CUENTA LA PROPIEDAD DE ABAJO, NO LA RECORDABA Y EL TEXTO SE SEPARABA EN LINEAS
