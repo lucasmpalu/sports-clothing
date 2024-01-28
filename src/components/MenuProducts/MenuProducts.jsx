@@ -36,6 +36,9 @@ const MenuProducts = ({showMenuProducts, setShowMenuProducts}) => {
         <img onClick={() => {setShowMenuProducts(false)}} src={close} className={styles.iconClose}alt="close" />
       </div>
 
+
+      <NavLink className={styles.NavLink} to="/products/" onClick={() => {setShowMenuProducts(false)}}>Todos</NavLink>
+      <hr className={styles.navHr} />
       <NavLink className={styles.NavLink} to="/products/zapatillas" onClick={() => {setShowMenuProducts(false)}}>Zapatillas</NavLink>
       <hr className={styles.navHr} />
 
