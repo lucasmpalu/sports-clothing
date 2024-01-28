@@ -1,0 +1,30 @@
+
+
+.StickyWhatsapp {
+    height:50px;
+    z-index: 1000;
+    width:50px;
+    position: fixed;
+    bottom: 40px;
+    right: 7.5rem
+}
+
+@media (max-width: 992px) {
+   .StickyWhatsapp{
+    right: 3.5rem
+   } 
+
+}
+@media (max-width: 768px) {
+   .StickyWhatsapp{
+    right: 3rem
+   } 
+
+}
+@media (max-width: 550px) {
+   .StickyWhatsapp{
+    right: 0.9rem
+   } 
+
+}
+

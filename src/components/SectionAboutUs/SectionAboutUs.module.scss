@@ -65,8 +65,8 @@ animation: entrada 1.5s;
 .navigateBack {
     color: white;
     position: absolute;
-    top: 30px;
-    left: 70px;
+    top: 1rem;
+    left: 8.5rem;
     text-decoration: none;
     z-index: 2;
 
@@ -106,7 +106,11 @@ animation: entrada 1.5s;
         .containerInfoAboutUs h2 {
             font-size: 35px;
         }
-    
+
+        .navigateBack {
+            top: 1rem;
+            left: 5rem;
+        }
 }
 @media (max-width: 768px) {
     .sectionAboutUs {
@@ -127,6 +131,11 @@ animation: entrada 1.5s;
     .containerInfoAboutUs {
         width: 70%;
         }
+
+        .navigateBack {
+            top: 1rem;
+            left: 4rem;
+        }
     
 }
 @media (max-width: 550px) {
@@ -138,6 +147,11 @@ animation: entrada 1.5s;
     .containerInfoAboutUs {
         width: 90%;
         line-height: 18px 
+        }
+    
+        .navigateBack {
+            top: 1rem;
+            left: 2rem;
         }
     
 }

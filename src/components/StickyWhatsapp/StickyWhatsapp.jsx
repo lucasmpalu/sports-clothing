@@ -1,5 +1,6 @@
 import React from 'react'
 import whatsapp from "../../../assets/icons/whatsapp.png";
+import styles from "./StickyWhatsapp.module.scss"
 
 const StickyWhatsapp = () => {
 
@@ -9,7 +10,7 @@ const StickyWhatsapp = () => {
     }
 
   return (
-    <a href="https://wa.me/543413127575" ><img src={whatsapp} style={{height:'50px', zIndex: '1000', width:'50px', position: 'fixed', bottom: '40px', right: '50px'}} alt="whatsapp" />
+    <a href="https://wa.me/543413127575" ><img src={whatsapp} className={styles.StickyWhatsapp}  alt="whatsapp" />
     </a>)
     }
 
