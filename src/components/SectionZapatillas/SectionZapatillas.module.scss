@@ -5,10 +5,11 @@ $background-white: whitesmoke;
     background-color: $background-white;
     min-height: 74vh;
     width: 100%;
-    padding: 1rem 8.5rem;
+    padding: 2rem 8.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
   .containerZapatillas {
@@ -31,7 +32,7 @@ $background-white: whitesmoke;
   }
   
   .sectionZapatillas h2 {
-    margin: 2rem;
+    margin-bottom: 1rem 0!important;
     text-align: center;
   }
 
@@ -45,7 +46,7 @@ $background-white: whitesmoke;
   
 @media (max-width: 992px) {
   .sectionZapatillas {
-    padding: 0.5rem 5rem!important;
+    padding: 1rem 5rem!important;
   }
 
   .containerZapatillas {
@@ -79,7 +80,7 @@ $background-white: whitesmoke;
 
 @media (max-width: 765px) {
   .sectionZapatillas {
-    padding: 0.5rem 4rem!important;
+    padding: 1rem 4rem!important;
     padding-bottom: 2rem;
 
   }
@@ -119,7 +120,7 @@ $background-white: whitesmoke;
 
 @media (max-width: 550px) {
   .sectionZapatillas {
-    padding: 0.5rem 2rem;
+    padding: 2rem 2rem!important;
     padding-bottom: 2rem;
   }
 
