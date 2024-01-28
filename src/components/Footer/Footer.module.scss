@@ -283,7 +283,7 @@ gap: 1rem;
       }
 
     .footerNewsletter, .footerDown, .footerMid {
-      padding: 1rem 4rem!important;
+      padding: 1rem 4rem;
      }
 
      .containerMenuFooter {
@@ -347,7 +347,7 @@ gap: 1rem;
 
     .newsletterForm {
       align-items: flex-start!important;
-      width: 100%;
+      width: 100%!important;
     }
     
     .containerInput {
@@ -379,5 +379,9 @@ gap: 1rem;
     .footerMid, .footerDown, .footerTop {
       padding-left: 2rem;
       padding-right: 2rem;
+    }
+
+    .footerMid {
+      padding-bottom: 1.5rem;
     }
   }
