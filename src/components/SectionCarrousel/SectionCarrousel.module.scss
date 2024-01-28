@@ -3,7 +3,7 @@ $background-white: whitesmoke;
 
 .sectionCarrousel {
     background-color: $background-white;
-    height: 83vh;
+    height: auto;
     width: 100%;
     padding: 1rem 8.5rem;
     display: flex;
@@ -13,8 +13,7 @@ $background-white: whitesmoke;
   }
   
   .sectionCarrousel h2 {
-    margin: 2rem;
-  
+    margin-bottom: 1rem;
   }
   
   .containerCarrouselCards {
@@ -63,7 +62,7 @@ $background-white: whitesmoke;
   
   .cardsCarrousel {
     min-width: 24%;
-    height: 500px;
+    height: 100%;
     box-sizing: border-box; 
     position: relative;
   }
@@ -99,11 +98,11 @@ $background-white: whitesmoke;
 
 @media (max-width: 992px) {
   .sectionCarrousel {
-    padding: 0.5rem 5rem;
+    padding: 1rem 5rem;
   }
   .cardsCarrousel {
     min-width: 23%;
-    height:380px;
+    height:auto;
     box-sizing: border-box; 
     position: relative;
   }
@@ -112,13 +111,13 @@ $background-white: whitesmoke;
 }
 @media (max-width: 765px) {
   .sectionCarrousel {
-    padding: 0.5rem 3rem;
+    padding: 1rem 4rem;
     height: 70vh;
   }
 
   .cardsCarrousel {
     min-width: 47%;
-    height:350px;
+    height:auto;
     box-sizing: border-box; 
     position: relative;
   }
@@ -147,13 +146,13 @@ $background-white: whitesmoke;
 
 @media (max-width: 550px) {
   .sectionCarrousel {
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
 
   }
 
   .cardsCarrousel {
     min-width: 47%;
-    height:300px;
+    height:auto;
     box-sizing: border-box; 
     position: relative;
   }

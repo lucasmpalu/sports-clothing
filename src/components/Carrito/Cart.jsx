@@ -81,7 +81,7 @@ useEffect(() => {
             <form className={styles.containerEntrega}>
 
               <label htmlFor='entrega'>Forma de entrega</label>
-              <input  onClick={handleInputChange} type="radio" id='retiro' name='entrega' value={0} onChange={handleInputChange} />
+              <input onClick={handleInputChange} type="radio" id='retiro' name='entrega' value={0} onChange={handleInputChange} />
               <p>Retiro por nuestros
                 <NavLink className={styles.navLink} to='/entregas-envios'>
                   locales
@@ -94,7 +94,7 @@ useEffect(() => {
               <input onClick={handleInputChange} type="radio" id='afuera'name='entrega' value={1900} onChange={handleInputChange} />
               <p>Envíos resto del país</p>
               {showSpan && <br/>}
-              {showSpan && <span style={{color:'red'}}>Debe seleccionar un metodo de entrega</span>}
+              {showSpan && <span style={{color:'red', marginTop: '150px'}}>Debe seleccionar un metodo de entrega</span>}
             </form>
 
             <div className={styles.containerStartBuy}>

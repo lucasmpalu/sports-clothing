@@ -25,7 +25,6 @@
 
 .containerGeneral {
     display: flex;
-    padding: 1.5rem 0;
 }
 
 .sidebarCategories {
@@ -164,7 +163,10 @@
       height: 22px;
       width: 22px;
     }
+    .navProducts {
+     margin-bottom: 1rem;
 
+    }
   }
   @media (max-width: 550px) {
     .sectionCategories {

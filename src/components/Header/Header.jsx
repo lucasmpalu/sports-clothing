@@ -54,7 +54,7 @@ const Header = () => {
 
   return (
     <HeaderContainer 
-    className={styles.boxHeader} style={{ transform: window.innerWidth > 992 ? (visible ? 'translateY(0)' : 'translateY(-5.4vh)') : null }}>
+    className={styles.boxHeader} style={{ transform: window.innerWidth > 768 ? (visible ? 'translateY(0)' : 'translateY(-5.4vh)') : null }}>
     <OptionalHeader />
       <BoxHeaderTop />
       <NavProducts />
