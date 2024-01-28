@@ -25,9 +25,7 @@ const Logo = () => {
     <>
     <NavLink className={styles.logoBoxResponsive} to="/">
       {<MenuLabel showMenuLabel={showMenuLabel} setShowMenuLabel={setShowMenuLabel}/>}
-
       <img onClick={() => {setShowMenuLabel(true)}} className={styles.iconMenu} src={menu} alt="menu" />
-
       <img
         className={styles.logoCompany}
         style={{transform: scroll ? 'scale(0.8)' : 'scale(1)'}}

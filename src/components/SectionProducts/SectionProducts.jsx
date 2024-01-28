@@ -6,12 +6,17 @@ import { updateCategory, updateProducts } from '../../redux/productsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import CardProduct from '../CardProduct/CardProduct'
 import { formateFirstLetter } from '../../utils/formateFirstLetter';
+import menu from '../../../assets/icons/menu2.png'
+import MenuProducts from '../MenuProducts/MenuProducts';
 
 
 
 
 
 const SectionProducts = ({cat}) => {
+
+  const [showMenuProducts, setShowMenuProducts] = useState(false);
+
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const { currentProducts, currentCategory } = useSelector((state) => state.products);
@@ -24,7 +29,6 @@ const SectionProducts = ({cat}) => {
 
 
   useEffect(() => {
-    console.log(cat)
     if (!cat) {
       dispatch(updateCategory('todo')); // o 'zapatilla' u otra categoría por defecto si lo deseas
       dispatch(updateProducts());
@@ -36,6 +40,10 @@ const SectionProducts = ({cat}) => {
       dispatch(updateProducts());
     }
   }, [cat])
+
+  const openMenuProducts = () => {
+    setShowMenuProducts(true)
+  }
   
 
 
@@ -62,6 +70,11 @@ const SectionProducts = ({cat}) => {
                   <NavLink to='/products/hombre' onClick={() => updateDispatchs('male')} className={styles.navlink}><li>Hombre</li></NavLink>
                   <NavLink to='/products/mujer' onClick={() => updateDispatchs('female')} className={styles.navlink}><li>Mujer</li></NavLink>
                 </ul>
+                  <div onClick={openMenuProducts} className={styles.containerLabelProducts}>
+                    <img className={styles.labelProducts} src={menu} alt="menu" />
+                    <NavLink className={styles.navlink}>Menú de productos</NavLink>
+                  </div>
+                <MenuProducts setShowMenuProducts={setShowMenuProducts} showMenuProducts={showMenuProducts}/>
 
                 </nav>
                 

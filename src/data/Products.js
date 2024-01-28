@@ -576,7 +576,8 @@ import NikeSportswearTechFleeceFemale from "../../assets/Products/Jogging/Nike-S
 import NikeSportswearTechFleece2Female from "../../assets/Products/Jogging/Nike-Sportswear-Tech-Fleece-2.png"
 import NikeTrailDawnRangeMale from '../../assets/Products/Jogging/Nike-Trail-Dawn-Range.png'
 import NikeTrailDawnRange2Male from '../../assets/Products/Jogging/Nike-Trail-Dawn-Range-2.png'
-
+import NikeCourtBoroughLow from '../../assets/Products/Zapatillas/Nike-Court-Borough-Low-2.png'
+import NikeCourtBoroughLow2 from '../../assets/Products/Zapatillas/Nike-Court-Borough-Low-2-2.png'
 
 
 export const Products = [
@@ -854,11 +855,11 @@ export const Products = [
 },
 {
     "id": 17,
-    "title": "Nike Legend Essential 3 Next Nature",
-    "img": NikeLegendEssential3NextNatureFemale,
-    "secondaryImg":NikeLegendEssential3NextNature2Female,
-    "desc": "",
-    "price": 140900,
+    "title": "Nike Court Borough Low 2",
+    "img": NikeCourtBoroughLow,
+    "secondaryImg": NikeCourtBoroughLow2,
+    "desc": "El calzado Nike Court Borough Low 2 combina comodidad y estilo. El ajuste estructurado que ofrece soporte presenta un diseño retro de básquetbol para que te puedas ver como una estrella fuera de la cancha.",
+    "price": 90700,
     "category": "zapatilla",
     "talles": {
         "36": 5,
@@ -866,8 +867,8 @@ export const Products = [
         "40": 5,
         "41": 6
     },
-    "sex": "female",
-    "color": "blue"
+    "sex": "male",
+    "color": "white"
 },
 {
     "id": 18,

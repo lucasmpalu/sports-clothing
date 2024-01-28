@@ -1,0 +1,104 @@
+$line-input: 0.5px solid #cccccc74 ;
+
+
+.menuLabel {
+    z-index: 1900;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    background-color: white;
+    font-size: 16px;
+    animation: translateMenu 0.4s 0.1s ease;
+    transition: all 0.4s;
+}
+
+
+@keyframes translateMenu {
+from {
+    transform: translateX(-100%);
+    opacity: 0.5;
+}
+
+to {
+    transform: translateX(0%);
+    opacity: 1;
+
+}
+}
+
+@keyframes exitMenu {
+from {
+    transform: translateX(0%);
+    opacity: 0.5;
+}
+
+to {
+    transform: translateX(-100%);
+    opacity: 1;
+
+}
+}
+
+.iconClose {
+    height: 25px;
+}
+
+.boxTop {
+    width: 100%;
+    background-color: rgba(224, 224, 224, 0.356);
+    padding: 1.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    font-size: 14px;
+    color: black;
+
+}
+
+.iconLogin {
+    height: 24px;
+}
+
+.iconClose {
+    height: 30px;
+}
+
+.boxLogin {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.boxLogin img {
+    height: 15px;
+}
+
+.NavLink {
+    text-decoration: none;
+    color: black;
+    padding:  0.9rem;
+    font-weight: 500;
+    width: 100%;
+    &:hover {
+        opacity: 0.6;
+        transition: 0.4s;
+      }
+
+}
+
+hr {
+border: $line-input;
+}
+
+@media (max-width: 768px) {
+    .menuLabel {
+        display: flex;
+    }
+}
